@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://picking agent.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+
+[node name="world" type="Node2D"]
+position = Vector2( 431.811, 121.447 )
+
+[node name="block" parent="." instance=ExtResource( 1 )]
+position = Vector2( 98.7043, 526.819 )
+
+[node name="block2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -72, 166 )
+
+[node name="block3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 71, 86 )
+
+[node name="picking agent" parent="." instance=ExtResource( 2 )]
+position = Vector2( 104.14, -155.681 )
+
+[node name="picking agent2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 78.498, 293.747 )
+
+[node name="picking agent3" parent="." instance=ExtResource( 2 )]
+position = Vector2( -85.1566, 47.2908 )
+
+[node name="toplace" type="Position2D" parent="."]
+position = Vector2( 517.273, -58.4743 )
+rotation = 0.0329078
+
+[node name="icon" type="Sprite" parent="toplace"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 0.46405, 0.409607 )
+scale = Vector2( 1.40101, 0.107828 )
+texture = ExtResource( 3 )
+
+[node name="icon2" type="Sprite" parent="toplace"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 0.464111, 0.410156 )
+rotation = 1.55934
+scale = Vector2( 1.40101, 0.107828 )
+texture = ExtResource( 3 )
