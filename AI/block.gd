@@ -1,5 +1,5 @@
 extends RigidBody2D
-var jai = "jai shree "
+var jai = "jai shree ram"
 var pickable = true
 
 func _ready():
